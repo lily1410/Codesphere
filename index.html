@@ -2,6 +2,11 @@
 <html lang="en">
 
 <head>
+    <meta name="description"
+        content="CodeSphere - A platform connecting developers and employers worldwide. Showcase skills, post jobs, and collaborate.">
+    <meta name="keywords" content="developers, jobs, tech, programming, laravel, frontend, backend, CodeSphere">
+    <meta name="author" content="Lilian Mattew">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeSphere</title>
@@ -11,19 +16,26 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="/assets/css/style.css">
-    <!-- Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="/assets/img/IMG_5463.JPG">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 
 </head>
 
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg pt-4">
+    <nav class="navbar navbar-expand-lg pt-4" data-aos="fade-down">
         <div class="container">
             <a class="navbar-brand text-white" href="#">Code<span style="color: #ce38ec;">Sphere</span></a>
-            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-icon"></span>
             </button>
+
 
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav">
@@ -35,15 +47,16 @@
             </div>
 
             <div class="d-flex devs">
-                <a href="#" class="btn btn-outline-light me-2">Login</a>
-                <a href="#" class="btn btn-outline-light">Register</a>
+                <a href="#login" class="btn btn-outline-light me-2">Login</a>
+                <a href="#register" class="btn btn-outline-light">Register</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <div class="container-fluid hero-section d-flex align-items-center" id="about">
-        <div class="row align-items-center justify-content-center w-100">
+    <div class="container-fluid hero-section d-flex align-items-center" id="about" data-aos="fade-up"
+        data-wow-delay="0.3s">
+        <div class="row align-items-center justify-content-center w-100" data-aos="fade-up">
 
             <!-- Text -->
             <div class="col-md-6 text-center text-md-start px-4">
@@ -51,10 +64,11 @@
                     Welcome To <span style="color: #ce38ec;">CodeSphere</span>
                 </h1>
                 <p class="lead mt-3 text-light">
-                    A platform where <strong>Developers</strong> and <strong>Employers</strong> connect.
+                    A platform where <strong style="color: #ce38ec;">Developers</strong> and <strong
+                        style="color: #ce38ec;">Employers</strong> connect.
                     Showcase your skills, find jobs, and collaborate with the best talents worldwide.
                 </p>
-                <div class="mt-4">
+                <div class="mt-4 started">
                     <a href="#" class="btn btn-primary btn-lg me-2" style="background:#ce38ec; border:none;">Get
                         Started</a>
                     <a href="#" class="btn btn-outline-light btn-lg">Learn More</a>
@@ -62,8 +76,8 @@
             </div>
 
             <!-- Image -->
-            <div class="col-md-5 mt-5 mt-md-0 text-center">
-                <img src="/assets/img/codesphere2.jpg" alt="CodeSphere Image"
+            <div class="col-md-5 mt-5 mt-md-0 text-center image" data-aos="fade-right">
+                <img src="/assets/img/herosection1.jpg" alt="CodeSphere Image"
                     class="img-fluid rounded-4 shadow-lg hero-img">
             </div>
         </div>
@@ -71,7 +85,7 @@
 
 
     <!-- Why Choose -->
-    <div class="container-fluid py-5" id="job">
+    <div class="container-fluid py-5" id="job" data-aos="fade-up" data-wow-delay="0.3s">
         <div class="text-center mb-5">
             <h2 class="fw-bold">Why Choose <span style="color: #ce38ec;">CodeSphere</span></h2>
             <p class="lead">A platform built for <strong>Developer</strong> and <strong>Employer</strong></p>
@@ -88,7 +102,7 @@
                 </div>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-3" data-aos="fade-right">
                 <div class="card p-4 h-100">
                     <div class="mb-3" style="font-size: 2.5rem; color: #ce38ec;">
                         <i class="fa-solid fa-business-time"></i>
@@ -99,7 +113,7 @@
                 </div>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-3" data-aos="zoom-in">
                 <div class="card p-4 h-100">
                     <div class="mb-3" style=" font-size: 2.5rem; color: #ce38ec;">
                         <i class="fa-solid fa-shield-halved"></i>
@@ -113,7 +127,7 @@
     </div>
 
     <!-- Meet The Developer -->
-    <div class="container-fluid portfolio text-center py-5" id="developer">
+    <div class="container-fluid portfolio text-center py-5" id="developer" data-aos="fade-right" data-wow-delay="0.3s">
         <h1 class="fw-bold text-white mb-5">
             Meet <span style="color:#ce38ec;">The Developer</span>
         </h1>
@@ -121,17 +135,19 @@
         <div class="row justify-content-center align-items-center">
             <!-- Image -->
             <div class="col-md-3 mb-4">
-                <img src="/assets/img/wallpaper1.png" alt="Lilian"
-                    class="img-fluid rounded-circle shadow-lg developer-img">
+                <div class="developer-photo">
+                    <img src="/assets/img/IMG_5463.JPG" alt="Lilian"
+                        class="img-fluid rounded-circle shadow-lg developer-img">
+                </div>
             </div>
 
             <!-- Write-up -->
-            <div class="col-md-6 text-start text-white developer-text">
+            <div class="col-md-6 text-start text-white developer-text" data-aos="zoom-in">
                 <h2 class="fw-bold mb-3">LILIAN</h2>
                 <p>
-                    Hi there! I'm Lilian, a passionate developer driven by creativity and
+                    Hi there, I'm Lilian, a passionate developer driven by creativity and
                     problem-solving. I specialize in building <strong>responsive, interactive,
-                        and visually pleasing web experiences</strong> using
+                        and user-friendly designs </strong>using
                     <span style="color:#ce38ec;">HTML</span>,
                     <span style="color:#ce38ec;">CSS</span>,
                     <span style="color:#ce38ec;">JavaScript</span>, and
@@ -140,50 +156,249 @@
                 <p>
                     My mission is to turn ideas into interactive digital products that don’t just
                     look good, but also <em>deliver real value</em>. From landing pages
-                    to full-scale web applications, I create website that looks good on 
+                    to full-scale web applications, I create website that looks good on
                     <strong>phones, tablets, and desktops</strong>.
                 </p>
-                <p>
-                    Beyond coding, I enjoy exploring new technologies, collaborating with teams,
-                    and constantly learning to stay ahead in the ever-evolving tech world.
-                    Whether you're an employer seeking top-notch work or a developer looking
-                    to collaborate, you’re in the right place.
-                </p>
-                <a href="#contact" class="btn btn-outline-light mt-3">Let’s Work Together</a>
+
+
+
+                <a href="#contact" class="btn btn-outline-light mt-3 " data-aos="zoom-in">Let’s Work Together</a>
             </div>
         </div>
     </div>
+    <section class="testimonials py-5 text-center text-white" data-aos="fade-up" data-wow-delay="0.3s">
+        <div class="container">
+            <h2 class="fw-bold mb-5">
+                What <strong class="highlight">DEVELOPERS</strong> Say
+                <i class="fa-solid fa-comments ms-2"></i>
+            </h2>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4 col-sm-6">
+                    <div class="testimonial-card">
+                        <i class="fa-solid fa-comment"></i>
+                        <p>CodeSphere helped me land my dream job!</p>
+                        <h6>— Sarah, Frontend Dev</h6>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="testimonial-card">
+                        <i class="fa-solid fa-comment"></i>
+                        <p>Great platform for finding talented developers.</p>
+                        <h6>— John, Recruiter</h6>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="testimonial-card">
+                        <i class="fa-solid fa-comment"></i>
+                        <p>I met my team for a startup project here!</p>
+                        <h6>— Daniel, Full Stack Dev</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="skills py-5 text-center" data-aos="fade-right">
+        <div class="container" data-bs-interval="4000">
+            <h2 class="fw-bold mb-4 text-white">Our <strong style="color:#ce38ec;">Tech</strong> Stack</h2>
+            <div class="d-flex flex-wrap justify-content-center gap-4">
+                <span class="badge html p-3 fs-5">HTML</span>
+                <span class="badge p-3 fs-5">CSS</span>
+                <span class="badge p-3 fs-5">Javascript</span>
+                <span class="badge p-3 fs-5">Tailwind-css</span>
+                <span class="badge p-3 fs-5">React</span>
+                <span class="badge p-3 fs-5">PHP-LARAVEL</span>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="login" class="contact-section py-5 text-white" data-aos="fade-up">
+        <div class="container text-center py-5"
+            style="background: rgba(43, 2, 51, 0.9); backdrop-filter: blur(8px); border-radius: 16px;"
+            data-bs-interval="4000">
+            <h2 class="fw-bold mb-4">Get In <strong style="color: #ce38ec;">Touch</strong></h2>
+            <form class=" form1 mx-auto p-4"
+                style="max-width: 600px; color: #ce38ec;  background-color: rgba(206, 56, 236, 0.5);">
+                <!-- <label for="name">Your Name</label> -->
+                <input type="text" class="form-control mb-3" placeholder="Your Name" required>
+                <!-- <label for="name">Your Email</label> -->
+                <input type="text" class="form-control mb-3" placeholder="Your Email" required>
+                <textarea class="form-control mb-3" rows="4" placeholder="Your Message"></textarea>
+                <button class="btn btn-lg" style="background-color: rgba(87, 4, 83, 0.932); color: #fff;">Send
+                    Message</button>
+            </form>
+        </div>
+        </div>
+
+    </section>
+
+    <!-- <section class="stats-section py-5 text-center text-white bg-dark" data-aos="fade-down">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3" data-aos="fade-up">
+                    <h2 class="fw-bold" style="color: #ce38ec;">10k+
+                    </h2>
+                    <p>Developers</p>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star-half-stroke" style="color:rgb(202, 205, 50);"></i>
+                </div>
+                <div class="col-md-3" data-aos="fade-right">
+                    <h2 class="fw-bold">500k+</h2>
+                    <p>Companies</p>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+
+                </div>
+                <div class="col-md-3" data-aos="fade-up">
+                    <h2 class="fw-bold" style="color: #ce38ec;">2000k+</h2>
+                    <p>Jobs Posted</p>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star-half-stroke" style="color:rgb(202, 205, 50);"></i>
+
+                </div>
+                <div class="col-md-3" data-aos="fade-right">
+                    <h2 class="fw-bold">95%</h2>
+                    <p>Success Rate</p>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star-half-stroke" style="color:rgb(202, 205, 50);"></i>
+
+                </div>
+            </div>
+        </div>
+
+    </section> -->
+
+    <section class="stats-section py-4 text-white">
+
+        <marquee behavior="scroll" direction="left" scrollamount="6">
+            <div class="container d-flex justify-content-around align-items-center flex-wrap">
+
+                <div class="stat-box text-center m-3" data-aos="fade-up">
+                    <h2 class="fw-bold" style="color: #ce38ec;">10k+
+                    </h2>
+                    <p>Developers</p>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star-half-stroke" style="color:rgb(202, 205, 50);"></i>
+                </div>
+                <div class="stat-box text-center m-3" data-aos="fade-right">
+                    <h2 class="fw-bold">50k+</h2>
+                    <p>Companies</p>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+
+                </div>
+                <div class="stat-box boxes text-center m-3" data-aos="fade-up">
+                    <h2 class="fw-bold build" style="color: #ce38ec;">200k+</h2>
+                    <p>Jobs Posted</p>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star-half-stroke" style="color:rgb(202, 205, 50);"></i>
+
+                </div>
+                <div class="stat-box text-center m-3" data-aos="fade-right">
+                    <h2 class="fw-bold">95%</h2>
+                    <p>Success Rate</p>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star" style="color: yellow;"></i>
+                    <i class="fa-solid fa-star-half-stroke" style="color:rgb(202, 205, 50);"></i>
+
+                </div>
+            </div>
+
+        </marquee>
+    </section>
+
+
+
+
+    <section class="developers-grid py-5 text-center" data-aos="fade-up">
+        <div class="container text-white">
+            <h2 class="fw-bold mb-5">Featured <strong class="highlight" style="color: #ce38ec;">Developers</strong></h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-3 col-sm-6">
+                    <div class="dev-card">
+                        <img src="/assets/img/maryjane.jpg" class="rounded-3 mb-3" alt="maryjane">
+                        <h5>Mary Jane</h5>
+                        <p>Full Stack Developer</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6" data-aos="fade-up">
+                    <div class="dev-card">
+                        <img src="/assets/img/pictureofaman.jpg" class="rounded-3 mb-3 img-fluid" alt="jamesdoe">
+                        <h5>James Doe</h5>
+                        <p>Backend Engineer</p>
+                    </div>
+
+                </div>
+
+                <div class="col-md-3 col-sm-6" data-aos="fade-up">
+                    <div class="dev-card">
+                        <img src="/assets/img/IMG_5463.JPG" class="rounded-3 mb-3 img-fluid" alt="Matthewlilian">
+                        <h5>Lilian Matthew</h5>
+                        <p>Front-end Developer</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
 
     <!-- Footer -->
     <footer class="footer mt-5">
-        <div class="container py-5">
+        <div class="container py-2">
             <div class="row text-white">
 
                 <!-- About -->
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 mb-4 text-center" data-aos="fade-right">
                     <h4 class="fw-bold text-uppercase mb-3" style="color:#ce38ec;">CodeSphere</h4>
                     <p class="small text-light">
-                        CodeSphere is a platform where <strong>Developers</strong> and
-                        <strong>Employers</strong> connect. We help talents showcase skills,
+                        CodeSphere is a platform where <strong style="color: #ce38ec;">Developers</strong> and
+                        <strong style="color: #ce38ec;">Employers</strong> connect. We help talents showcase skills,
                         land jobs, and collaborate worldwide.
                     </p>
                 </div>
 
                 <!-- Quick Links -->
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 mb-4 text-center" data-aos="zoom-in">
                     <h5 class="fw-bold mb-3">Quick Links</h5>
                     <ul class="list-unstyled">
                         <li><a href="#" class="footer-link">Home</a></li>
-                        <li><a href="#" class="footer-link">About</a></li>
-                        <li><a href="#" class="footer-link">Jobs</a></li>
-                        <li><a href="#" class="footer-link">Developers</a></li>
+                        <li><a href="#about" class="footer-link">About</a></li>
+                        <li><a href="#job" class="footer-link">Jobs</a></li>
+                        <li><a href="#developer" class="footer-link">Developers</a></li>
                     </ul>
                 </div>
 
                 <!-- Socials -->
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 mb-4 " data-aos="fade-right">
                     <h5 class="fw-bold mb-3">Follow Us</h5>
-                    <div class="d-flex gap-3">
+                    <div class="d-flex gap-3 ">
                         <a href="#" class="footer-social"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="footer-social"><i class="fab fa-twitter"></i></a>
                         <a href="#" class="footer-social"><i class="fab fa-instagram"></i></a>
@@ -203,6 +418,15 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // animation duration in ms
+            once: true      // animation only happens once
+        });
+
+    </script>
+
 </body>
 
 </html>
